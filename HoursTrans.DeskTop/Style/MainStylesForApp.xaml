@@ -1,0 +1,52 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+
+    <Style x:Key="MainBorder" TargetType="Border">
+        <Setter Property="CornerRadius" Value="7" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Padding" Value="7" />
+    </Style>
+
+    <Style x:Key="TitleTextBlock" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="{StaticResource TextBrush}" />
+        <Setter Property="FontSize" Value="{StaticResource TitleFontSize}" />
+        <Setter Property="FontFamily" Value="{StaticResource TitleFontFamily}" />
+        <Setter Property="Padding" Value="20,5" />
+        <Setter Property="Background" Value="{StaticResource BackGroundBrush}" />
+    </Style>
+
+    <Style x:Key="ViewItemBorder" TargetType="Border">
+        <Setter Property="CornerRadius" Value="5" />
+        <Setter Property="BorderThickness" Value="2" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="Background" Value="{StaticResource ViewItemBackGroundBrush}" />
+        <Setter Property="BorderBrush" Value="{StaticResource ViewItemBackGroundBrush}" />
+        <Setter Property="MinHeight" Value="200" />
+        <Setter Property="MinWidth" Value="400" />
+        <Setter Property="Padding" Value="15" />
+        <Setter Property="UIElement.Effect">
+            <Setter.Value>
+                <DropShadowEffect BlurRadius="7" ShadowDepth="0" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="SideMenuBorder" TargetType="Border">
+        <Setter Property="CornerRadius" Value="5" />
+        <Setter Property="BorderThickness" Value="2" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="Background" Value="{StaticResource SideBarBackGroundBrush}" />
+        <Setter Property="BorderBrush" Value="{StaticResource SideBarBackGroundBrush}" />
+        <Setter Property="Padding" Value="15" />
+        <Setter Property="Margin" Value="5" />
+        <Setter Property="UIElement.Effect">
+            <Setter.Value>
+                <DropShadowEffect BlurRadius="7" ShadowDepth="0" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

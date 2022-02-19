@@ -1,0 +1,568 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks">
+
+    <Style x:Key="CloseButton" TargetType="Button">
+        <Setter Property="Height" Value="auto" />
+        <Setter Property="Width" Value="auto" />
+        <Setter Property="Margin" Value="3" />
+        <Setter Property="Padding" Value="7" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <iconPacks:PackIconMaterialDesign
+                            x:Name="I"
+                            Margin="{TemplateBinding Padding}"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Background="{TemplateBinding Background}"
+                            Foreground="{StaticResource TextBrush}"
+                            Kind="Close" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="MouseEnter">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <ColorAnimation
+                            Storyboard.TargetProperty="Background.Color"
+                            To="{StaticResource WorningColor}"
+                            Duration="0:0:0.001" />
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+            <EventTrigger RoutedEvent="MouseLeave">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <ColorAnimation
+                            Storyboard.TargetProperty="Background.Color"
+                            To="Transparent"
+                            Duration="0:0:0.1" />
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="MinButton" TargetType="Button">
+        <Setter Property="Height" Value="auto" />
+        <Setter Property="Width" Value="auto" />
+        <Setter Property="Margin" Value="3" />
+        <Setter Property="Padding" Value="7" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <TextBlock
+                            x:Name="I"
+                            Margin="{TemplateBinding Padding}"
+                            Padding="10 5"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Background="{TemplateBinding Background}"
+                            FontFamily="{StaticResource MD}"
+                            FontSize="30"
+                            Foreground="{StaticResource TextBrush}"
+                            Text="-" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="MouseEnter">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <ColorAnimation
+                            Storyboard.TargetProperty="Background.Color"
+                            To="{StaticResource SelectedBackGround}"
+                            Duration="0:0:0.001" />
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+            <EventTrigger RoutedEvent="MouseLeave">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <ColorAnimation
+                            Storyboard.TargetProperty="Background.Color"
+                            To="Transparent"
+                            Duration="0:0:0.1" />
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="MaxButton" TargetType="Button">
+        <Setter Property="Height" Value="auto" />
+        <Setter Property="Width" Value="auto" />
+        <Setter Property="Margin" Value="3" />
+        <Setter Property="Padding" Value="7" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <TextBlock
+                            x:Name="I"
+                            Margin="{TemplateBinding Padding}"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontFamily="{StaticResource MD}"
+                            Foreground="{TemplateBinding Foreground}"
+                            Text="WindowMaximize" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="MouseEnter">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <ColorAnimation
+                            Storyboard.TargetProperty="Background.Color"
+                            To="{StaticResource SelectedBackGround}"
+                            Duration="0:0:0.001" />
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+            <EventTrigger RoutedEvent="MouseLeave">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <ColorAnimation
+                            Storyboard.TargetProperty="Background.Color"
+                            To="Transparent"
+                            Duration="0:0:0.1" />
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="LogOutButton" TargetType="Button">
+        <Setter Property="Height" Value="auto" />
+        <Setter Property="Width" Value="auto" />
+        <Setter Property="Margin" Value="3" />
+        <Setter Property="Padding" Value="7" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <TextBlock
+                            x:Name="I"
+                            Margin="{TemplateBinding Padding}"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontFamily="{StaticResource MD}"
+                            Foreground="{TemplateBinding Foreground}"
+                            Text="LogoutVariant" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="MouseEnter">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <ColorAnimation
+                            Storyboard.TargetProperty="Background.Color"
+                            To="{StaticResource SelectedBackGround}"
+                            Duration="0:0:0.001" />
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+            <EventTrigger RoutedEvent="MouseLeave">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <ColorAnimation
+                            Storyboard.TargetProperty="Background.Color"
+                            To="Transparent"
+                            Duration="0:0:0.1" />
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="HomeRadio" TargetType="RadioButton">
+        <Setter Property="Height" Value="auto" />
+        <Setter Property="Width" Value="auto" />
+        <Setter Property="Padding" Value="15,10" />
+        <Setter Property="Background" Value="{StaticResource BackGroundBrush}" />
+        <Setter Property="FontSize" Value="{StaticResource NormalFontSize}" />
+        <Setter Property="Foreground" Value="{StaticResource TextBrush}" />
+        <Setter Property="FontFamily" Value="{StaticResource NormalFontFamily}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RadioButton">
+                    <StackPanel
+                        x:Name="MBG"
+                        Background="{TemplateBinding Background}"
+                        Orientation="Horizontal">
+                        <TextBlock
+                            x:Name="I"
+                            Margin="{TemplateBinding Padding}"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontFamily="{StaticResource MD}"
+                            Foreground="{TemplateBinding Foreground}"
+                            Text="ViewDashboardEdit" />
+                        <TextBlock
+                            x:Name="T"
+                            Padding="0,0,15,0"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontFamily="{TemplateBinding FontFamily}"
+                            FontSize="{TemplateBinding FontSize}"
+                            Foreground="{TemplateBinding Foreground}"
+                            Text="{TemplateBinding Content}" />
+                    </StackPanel>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="MBG" Property="Background" Value="{StaticResource SelectedBackGroundBrush}" />
+                            <Setter TargetName="I" Property="Foreground" Value="{StaticResource SelectedTextBrush}" />
+                            <Setter TargetName="T" Property="Foreground" Value="{StaticResource SelectedTextBrush}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="MouseEnter">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <ColorAnimation
+                            Storyboard.TargetProperty="Background.Color"
+                            To="{StaticResource SelectedBackGround}"
+                            Duration="0:0:0.1" />
+                        <ColorAnimation
+                            Storyboard.TargetProperty="Foreground.Color"
+                            To="{StaticResource SelectedText}"
+                            Duration="0:0:0.1" />
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+            <EventTrigger RoutedEvent="MouseLeave">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <ColorAnimation
+                            Storyboard.TargetProperty="Background.Color"
+                            To="{StaticResource BackGround}"
+                            Duration="0:0:0.1" />
+                        <ColorAnimation
+                            Storyboard.TargetProperty="Foreground.Color"
+                            To="{StaticResource NormalText}"
+                            Duration="0:0:0.1" />
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="PepoleRadio" TargetType="RadioButton">
+        <Setter Property="Height" Value="auto" />
+        <Setter Property="Width" Value="auto" />
+        <Setter Property="Padding" Value="15,10" />
+        <Setter Property="Background" Value="{StaticResource BackGroundBrush}" />
+        <Setter Property="FontFamily" Value="{StaticResource NormalFontFamily}" />
+        <Setter Property="FontSize" Value="{StaticResource NormalFontSize}" />
+        <Setter Property="Foreground" Value="{StaticResource TextBrush}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RadioButton">
+                    <StackPanel
+                        x:Name="MBG"
+                        Background="{TemplateBinding Background}"
+                        Orientation="Horizontal">
+                        <TextBlock
+                            x:Name="I"
+                            Margin="{TemplateBinding Padding}"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontFamily="{StaticResource MD}"
+                            Foreground="{TemplateBinding Foreground}"
+                            Text="AccountGroup" />
+                        <TextBlock
+                            x:Name="T"
+                            Padding="0,0,15,0"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontFamily="{TemplateBinding FontFamily}"
+                            FontSize="{TemplateBinding FontSize}"
+                            Foreground="{TemplateBinding Foreground}"
+                            Text="{TemplateBinding Content}" />
+                    </StackPanel>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="MBG" Property="Background" Value="{StaticResource SelectedBackGroundBrush}" />
+                            <Setter TargetName="I" Property="Foreground" Value="{StaticResource SelectedTextBrush}" />
+                            <Setter TargetName="T" Property="Foreground" Value="{StaticResource SelectedTextBrush}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="MouseEnter">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <ColorAnimation
+                            Storyboard.TargetProperty="Background.Color"
+                            To="{StaticResource SelectedBackGround}"
+                            Duration="0:0:0.1" />
+                        <ColorAnimation
+                            Storyboard.TargetProperty="Foreground.Color"
+                            To="{StaticResource SelectedText}"
+                            Duration="0:0:0.1" />
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+            <EventTrigger RoutedEvent="MouseLeave">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <ColorAnimation
+                            Storyboard.TargetProperty="Background.Color"
+                            To="{StaticResource BackGround}"
+                            Duration="0:0:0.1" />
+                        <ColorAnimation
+                            Storyboard.TargetProperty="Foreground.Color"
+                            To="{StaticResource NormalText}"
+                            Duration="0:0:0.1" />
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="Cars" TargetType="RadioButton">
+        <Setter Property="Height" Value="auto" />
+        <Setter Property="Width" Value="auto" />
+        <Setter Property="Padding" Value="15,10" />
+        <Setter Property="Background" Value="{StaticResource BackGroundBrush}" />
+        <Setter Property="FontFamily" Value="{StaticResource NormalFontFamily}" />
+        <Setter Property="FontSize" Value="{StaticResource NormalFontSize}" />
+        <Setter Property="Foreground" Value="{StaticResource TextBrush}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RadioButton">
+                    <StackPanel
+                        x:Name="MBG"
+                        Background="{TemplateBinding Background}"
+                        Orientation="Horizontal">
+                        <TextBlock
+                            x:Name="I"
+                            Margin="{TemplateBinding Padding}"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontFamily="{StaticResource MD}"
+                            Foreground="{TemplateBinding Foreground}"
+                            Text="BusMultiple" />
+                        <TextBlock
+                            x:Name="T"
+                            Padding="0,0,15,0"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontFamily="{TemplateBinding FontFamily}"
+                            FontSize="{TemplateBinding FontSize}"
+                            Foreground="{TemplateBinding Foreground}"
+                            Text="{TemplateBinding Content}" />
+                    </StackPanel>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="MBG" Property="Background" Value="{StaticResource SelectedBackGroundBrush}" />
+                            <Setter TargetName="I" Property="Foreground" Value="{StaticResource SelectedTextBrush}" />
+                            <Setter TargetName="T" Property="Foreground" Value="{StaticResource SelectedTextBrush}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="MouseEnter">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <ColorAnimation
+                            Storyboard.TargetProperty="Background.Color"
+                            To="{StaticResource SelectedBackGround}"
+                            Duration="0:0:0.1" />
+                        <ColorAnimation
+                            Storyboard.TargetProperty="Foreground.Color"
+                            To="{StaticResource SelectedText}"
+                            Duration="0:0:0.1" />
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+            <EventTrigger RoutedEvent="MouseLeave">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <ColorAnimation
+                            Storyboard.TargetProperty="Background.Color"
+                            To="{StaticResource BackGround}"
+                            Duration="0:0:0.1" />
+                        <ColorAnimation
+                            Storyboard.TargetProperty="Foreground.Color"
+                            To="{StaticResource NormalText}"
+                            Duration="0:0:0.1" />
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="Trips" TargetType="RadioButton">
+        <Setter Property="Height" Value="auto" />
+        <Setter Property="Width" Value="auto" />
+        <Setter Property="Padding" Value="15,10" />
+        <Setter Property="Background" Value="{StaticResource BackGroundBrush}" />
+        <Setter Property="FontFamily" Value="{StaticResource NormalFontFamily}" />
+        <Setter Property="FontSize" Value="{StaticResource NormalFontSize}" />
+        <Setter Property="Foreground" Value="{StaticResource TextBrush}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RadioButton">
+                    <StackPanel
+                        x:Name="MBG"
+                        Background="{TemplateBinding Background}"
+                        Orientation="Horizontal">
+                        <TextBlock
+                            x:Name="I"
+                            Margin="{TemplateBinding Padding}"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontFamily="{StaticResource MD}"
+                            Foreground="{TemplateBinding Foreground}"
+                            Text="Filmstrip" />
+                        <TextBlock
+                            x:Name="T"
+                            Padding="0,0,15,0"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontFamily="{TemplateBinding FontFamily}"
+                            FontSize="{TemplateBinding FontSize}"
+                            Foreground="{TemplateBinding Foreground}"
+                            Text="{TemplateBinding Content}" />
+                    </StackPanel>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="MBG" Property="Background" Value="{StaticResource SelectedBackGroundBrush}" />
+                            <Setter TargetName="I" Property="Foreground" Value="{StaticResource SelectedTextBrush}" />
+                            <Setter TargetName="T" Property="Foreground" Value="{StaticResource SelectedTextBrush}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="MouseEnter">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <ColorAnimation
+                            Storyboard.TargetProperty="Background.Color"
+                            To="{StaticResource SelectedBackGround}"
+                            Duration="0:0:0.1" />
+                        <ColorAnimation
+                            Storyboard.TargetProperty="Foreground.Color"
+                            To="{StaticResource SelectedText}"
+                            Duration="0:0:0.1" />
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+            <EventTrigger RoutedEvent="MouseLeave">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <ColorAnimation
+                            Storyboard.TargetProperty="Background.Color"
+                            To="{StaticResource BackGround}"
+                            Duration="0:0:0.1" />
+                        <ColorAnimation
+                            Storyboard.TargetProperty="Foreground.Color"
+                            To="{StaticResource NormalText}"
+                            Duration="0:0:0.1" />
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="Maps" TargetType="RadioButton">
+        <Setter Property="Height" Value="auto" />
+        <Setter Property="Width" Value="auto" />
+        <Setter Property="Padding" Value="15,10" />
+        <Setter Property="Background" Value="{StaticResource BackGroundBrush}" />
+        <Setter Property="FontFamily" Value="{StaticResource NormalFontFamily}" />
+        <Setter Property="FontSize" Value="{StaticResource NormalFontSize}" />
+        <Setter Property="Foreground" Value="{StaticResource TextBrush}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RadioButton">
+                    <StackPanel
+                        x:Name="MBG"
+                        Background="{TemplateBinding Background}"
+                        Orientation="Horizontal">
+                        <TextBlock
+                            x:Name="I"
+                            Margin="{TemplateBinding Padding}"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontFamily="{StaticResource MD}"
+                            Foreground="{TemplateBinding Foreground}"
+                            Text="Map" />
+                        <TextBlock
+                            x:Name="T"
+                            Padding="0,0,15,0"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontFamily="{TemplateBinding FontFamily}"
+                            FontSize="{TemplateBinding FontSize}"
+                            Foreground="{TemplateBinding Foreground}"
+                            Text="{TemplateBinding Content}" />
+                    </StackPanel>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="MBG" Property="Background" Value="{StaticResource SelectedBackGroundBrush}" />
+                            <Setter TargetName="I" Property="Foreground" Value="{StaticResource SelectedTextBrush}" />
+                            <Setter TargetName="T" Property="Foreground" Value="{StaticResource SelectedTextBrush}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="MouseEnter">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <ColorAnimation
+                            Storyboard.TargetProperty="Background.Color"
+                            To="{StaticResource SelectedBackGround}"
+                            Duration="0:0:0.1" />
+                        <ColorAnimation
+                            Storyboard.TargetProperty="Foreground.Color"
+                            To="{StaticResource SelectedText}"
+                            Duration="0:0:0.1" />
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+            <EventTrigger RoutedEvent="MouseLeave">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <ColorAnimation
+                            Storyboard.TargetProperty="Background.Color"
+                            To="{StaticResource BackGround}"
+                            Duration="0:0:0.1" />
+                        <ColorAnimation
+                            Storyboard.TargetProperty="Foreground.Color"
+                            To="{StaticResource NormalText}"
+                            Duration="0:0:0.1" />
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+        </Style.Triggers>
+    </Style>
+
+</ResourceDictionary>

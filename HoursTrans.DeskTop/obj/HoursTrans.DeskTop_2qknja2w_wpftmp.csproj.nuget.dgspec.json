@@ -1,0 +1,521 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.DeskTop\\HoursTrans.DeskTop.csproj": {}
+  },
+  "projects": {
+    "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HorusTrans.Stores\\HorusTrans.Stores.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HorusTrans.Stores\\HorusTrans.Stores.csproj",
+        "projectName": "HorusTrans.Stores",
+        "projectPath": "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HorusTrans.Stores\\HorusTrans.Stores.csproj",
+        "packagesPath": "C:\\Users\\AnyApp\\.nuget\\packages\\",
+        "outputPath": "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HorusTrans.Stores\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\AnyApp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.DbMySqlManger\\HoursTrans.DbMySqlManger.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.DbMySqlManger\\HoursTrans.DbMySqlManger.csproj",
+        "projectName": "HoursTrans.DbMySqlManger",
+        "projectPath": "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.DbMySqlManger\\HoursTrans.DbMySqlManger.csproj",
+        "packagesPath": "C:\\Users\\AnyApp\\.nuget\\packages\\",
+        "outputPath": "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.DbMySqlManger\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\AnyApp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.Moudels\\HoursTrans.Domiens.csproj": {
+                "projectPath": "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.Moudels\\HoursTrans.Domiens.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.14, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.DbSqlLiteManger\\HoursTrans.DbSqlLiteManger.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.DbSqlLiteManger\\HoursTrans.DbSqlLiteManger.csproj",
+        "projectName": "HoursTrans.DbSqlLiteManger",
+        "projectPath": "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.DbSqlLiteManger\\HoursTrans.DbSqlLiteManger.csproj",
+        "packagesPath": "C:\\Users\\AnyApp\\.nuget\\packages\\",
+        "outputPath": "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.DbSqlLiteManger\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\AnyApp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[5.0.14, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.DbSqlServerManger\\HoursTrans.DbSqlServerManger.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.DbSqlServerManger\\HoursTrans.DbSqlServerManger.csproj",
+        "projectName": "HoursTrans.DbSqlServerManger",
+        "projectPath": "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.DbSqlServerManger\\HoursTrans.DbSqlServerManger.csproj",
+        "packagesPath": "C:\\Users\\AnyApp\\.nuget\\packages\\",
+        "outputPath": "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.DbSqlServerManger\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\AnyApp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.DeskTop\\HoursTrans.DeskTop.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.DeskTop\\HoursTrans.DeskTop.csproj",
+        "projectName": "HoursTrans.DeskTop",
+        "projectPath": "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.DeskTop\\HoursTrans.DeskTop.csproj",
+        "packagesPath": "C:\\Users\\AnyApp\\.nuget\\packages\\",
+        "outputPath": "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.DeskTop\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\AnyApp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
+            "projectReferences": {
+              "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HorusTrans.Stores\\HorusTrans.Stores.csproj": {
+                "projectPath": "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HorusTrans.Stores\\HorusTrans.Stores.csproj"
+              },
+              "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.DbMySqlManger\\HoursTrans.DbMySqlManger.csproj": {
+                "projectPath": "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.DbMySqlManger\\HoursTrans.DbMySqlManger.csproj"
+              },
+              "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.DbSqlLiteManger\\HoursTrans.DbSqlLiteManger.csproj": {
+                "projectPath": "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.DbSqlLiteManger\\HoursTrans.DbSqlLiteManger.csproj"
+              },
+              "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.DbSqlServerManger\\HoursTrans.DbSqlServerManger.csproj": {
+                "projectPath": "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.DbSqlServerManger\\HoursTrans.DbSqlServerManger.csproj"
+              },
+              "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.Moudels\\HoursTrans.Domiens.csproj": {
+                "projectPath": "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.Moudels\\HoursTrans.Domiens.csproj"
+              },
+              "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.ViewMoudels\\HoursTrans.ViewMoudels.csproj": {
+                "projectPath": "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.ViewMoudels\\HoursTrans.ViewMoudels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "MaterialDesignThemes": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.Moudels\\HoursTrans.Domiens.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.Moudels\\HoursTrans.Domiens.csproj",
+        "projectName": "HoursTrans.Domiens",
+        "projectPath": "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.Moudels\\HoursTrans.Domiens.csproj",
+        "packagesPath": "C:\\Users\\AnyApp\\.nuget\\packages\\",
+        "outputPath": "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.Moudels\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\AnyApp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.14, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.ViewMoudels\\HoursTrans.ViewMoudels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.ViewMoudels\\HoursTrans.ViewMoudels.csproj",
+        "projectName": "HoursTrans.ViewMoudels",
+        "projectPath": "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.ViewMoudels\\HoursTrans.ViewMoudels.csproj",
+        "packagesPath": "C:\\Users\\AnyApp\\.nuget\\packages\\",
+        "outputPath": "D:\\NewWork\\Cross\\HoursTrans\\HoursTrans.Mobile\\HoursTrans.ViewMoudels\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\AnyApp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "PropertyChanged.Fody": {
+              "target": "Package",
+              "version": "[3.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

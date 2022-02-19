@@ -1,0 +1,31 @@
+﻿<UserControl
+    x:Class="HoursTrans.DeskTop.Views.Navigation.SideMenuBar"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:HoursTrans.DeskTop.Views.Navigation"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ve="clr-namespace:HoursTrans.ViewMoudels.Navigations;assembly=HoursTrans.ViewMoudels"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+    <Border Style="{StaticResource SideMenuBorder}">
+        <StackPanel
+            Width="auto"
+            Height="auto"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
+            <RadioButton
+                Command="{Binding SideNavigator}"
+                CommandParameter="{x:Static ve:SideMenu.Home}"
+                Content="Home" />
+            <RadioButton
+                Command="{Binding SideNavigator}"
+                CommandParameter="{x:Static ve:SideMenu.Add}"
+                Content="Add" />
+            <RadioButton Content="Edite" />
+            <RadioButton Content="Upate" />
+            <RadioButton Content="Delete" />
+        </StackPanel>
+    </Border>
+</UserControl>

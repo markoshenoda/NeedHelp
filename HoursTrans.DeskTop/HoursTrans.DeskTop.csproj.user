@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\AddPepoleView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\MainView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Navigation\MenueBar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Navigation\SideMenuBar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Pepole.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PepoleHomeView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\ColoersStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\Fonts.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\MainStylesForApp.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\MenueRadioButtons.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AddPepoleView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\MainView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Navigation\MenueBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Navigation\SideMenuBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Pepole.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PepoleHomeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Fonts\AlSharkTitle-Black.otf" />
+    <None Remove="Fonts\Khaled-Font.otf" />
+    <None Remove="Fonts\materialdesignicons-webfont.ttf" />
+    <None Remove="Fonts\rudawbold.ttf" />
+    <None Remove="Fonts\Shoroq-Font.ttf" />
+    <None Remove="Fonts\TheSans-Bold-alinma.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MahApps.Metro.IconPacks.MaterialDesign" Version="4.11.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HoursTrans.ViewMoudels\HoursTrans.ViewMoudels.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\AlSharkTitle-Black.otf" />
+    <Resource Include="Fonts\Khaled-Font.otf" />
+    <Resource Include="Fonts\materialdesignicons-webfont.ttf" />
+    <Resource Include="Fonts\rudawbold.ttf" />
+    <Resource Include="Fonts\Shoroq-Font.ttf" />
+    <Resource Include="Fonts\TheSans-Bold-alinma.ttf" />
+  </ItemGroup>
+
+</Project>
