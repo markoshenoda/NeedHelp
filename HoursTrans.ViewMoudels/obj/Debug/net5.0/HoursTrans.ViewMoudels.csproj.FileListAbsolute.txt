@@ -1,0 +1,11 @@
+D:\NewWork\Cross\HoursTrans\HoursTrans.Mobile\HoursTrans.ViewMoudels\bin\Debug\net5.0\HoursTrans.ViewMoudels.deps.json
+D:\NewWork\Cross\HoursTrans\HoursTrans.Mobile\HoursTrans.ViewMoudels\bin\Debug\net5.0\HoursTrans.ViewMoudels.dll
+D:\NewWork\Cross\HoursTrans\HoursTrans.Mobile\HoursTrans.ViewMoudels\bin\Debug\net5.0\ref\HoursTrans.ViewMoudels.dll
+D:\NewWork\Cross\HoursTrans\HoursTrans.Mobile\HoursTrans.ViewMoudels\bin\Debug\net5.0\HoursTrans.ViewMoudels.pdb
+D:\NewWork\Cross\HoursTrans\HoursTrans.Mobile\HoursTrans.ViewMoudels\obj\Debug\net5.0\HoursTrans.ViewMoudels.GeneratedMSBuildEditorConfig.editorconfig
+D:\NewWork\Cross\HoursTrans\HoursTrans.Mobile\HoursTrans.ViewMoudels\obj\Debug\net5.0\HoursTrans.ViewMoudels.AssemblyInfoInputs.cache
+D:\NewWork\Cross\HoursTrans\HoursTrans.Mobile\HoursTrans.ViewMoudels\obj\Debug\net5.0\HoursTrans.ViewMoudels.AssemblyInfo.cs
+D:\NewWork\Cross\HoursTrans\HoursTrans.Mobile\HoursTrans.ViewMoudels\obj\Debug\net5.0\HoursTrans.ViewMoudels.csproj.CoreCompileInputs.cache
+D:\NewWork\Cross\HoursTrans\HoursTrans.Mobile\HoursTrans.ViewMoudels\obj\Debug\net5.0\HoursTrans.ViewMoudels.dll
+D:\NewWork\Cross\HoursTrans\HoursTrans.Mobile\HoursTrans.ViewMoudels\obj\Debug\net5.0\ref\HoursTrans.ViewMoudels.dll
+D:\NewWork\Cross\HoursTrans\HoursTrans.Mobile\HoursTrans.ViewMoudels\obj\Debug\net5.0\HoursTrans.ViewMoudels.pdb
